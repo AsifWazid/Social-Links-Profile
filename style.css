@@ -52,6 +52,7 @@ body {
     text-align: center;
     width: 100%;
     max-width: 499px;
+    height: auto;
     gap: 2rem;
     margin: 1.5rem;
     overflow: hidden;

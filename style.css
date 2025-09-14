@@ -40,7 +40,8 @@ body {
     background-color: var(--bg-color);
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
 
 .card {

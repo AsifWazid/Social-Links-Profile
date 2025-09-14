@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+:root {
+    --bg-color: hsl(0, 0%, 8%);
+    --card-bg-color: hsl(0, 0%, 12%);
+    --card-btn: hsl(0, 0%, 20%);
+    --text-color: hsl(0, 0%, 100%);
+    --location-color: hsl(75, 94%, 57%);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 499px;
+    gap: 2rem;
+    margin: 1.5rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 0.8rem; 
+}
+
+.card-header img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.card-header h2 {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.card-header .location {
+    color: var(--location-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card-body p {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-body .btn {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--card-btn);
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+
+.card-body .btn:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: var(--bg-color);
+}
+
+
+footer {
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    bottom: auto;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 1rem;
+        height: 100vh;
+    }
+    .card {
+        height: fit-content;
+        padding: 1.5rem;
+    }
+    .card-header img {
+        width: 72px;
+        height: 72px;
+    }
+    .card-header h2 {
+        font-size: 1.2rem;
+    }
+    .card-header .location {
+        font-size: 0.85rem;
+    }
+    .card-body p {
+        font-size: 0.90rem;
+    }
+    .card-body .btn {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
